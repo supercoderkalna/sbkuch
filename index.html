@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBKuch — Har Kadam, Tarakki. Every financial service at your counter.</title>
+<meta name="description" content="SBKuch turns any shop into a full financial counter — AEPS, UPI, bill payments, money transfer, travel booking and more. Sab kuch, ek jagah.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="site-header">
+  <div class="wrap nav-bar">
+    <a href="#top" class="brand">
+      <img src="assets/sbkuch-logo.png" alt="SBKuch" class="brand-logo" height="38">
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#app">App</a>
+      <a href="#earnings">Earnings</a>
+      <a href="#trust">Security</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="tel:18001234567" class="nav-phone">📞 1800 123 4567</a>
+      <a href="#" class="nav-login" aria-label="Existing Saathi login">Saathi login</a>
+      <button type="button" class="btn btn-primary btn-small" data-open-modal="partnerModal" data-role="retailer">Become a Saathi</button>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg-mesh" aria-hidden="true">
+      <div class="mesh-blob mesh-blob-1"></div>
+      <div class="mesh-blob mesh-blob-2"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy" data-reveal>
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          SBKuch Saathi · साथी · 10,000+ across India
+        </div>
+        <h1>Be the bank your<br><em>neighbourhood needs.</em></h1>
+        <p class="hero-lede">
+          One login. Twelve services. Daily settlement straight to your account.
+          Your customers need AEPS, UPI, bill payments, money transfers —
+          you're the closest place they trust.
+          <strong>Turn that trust into income.</strong>
+        </p>
+        <p class="hero-hindi">एक login. बारह सेवाएँ. रोज़ settlement. — अपनी दुकान, पूरा बैंक।</p>
+        <div class="hero-trust-chips">
+          <span>✓ RBI &amp; NPCI compliant</span>
+          <span>✓ Free for Saathis</span>
+          <span>✓ Daily settlement</span>
+          <span>✓ 10,000+ Saathis</span>
+        </div>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary btn-hero" data-open-modal="partnerModal" data-role="retailer">
+            Become a SBKuch Saathi — free
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <a href="#earnings" class="btn btn-outline-white">See what you can earn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal data-reveal-delay="150">
+        <div class="hero-img-wrap">
+          <img src="assets/scenes/hero-kiosk.jpg" alt="A SBKuch Saathi at his kirana counter showing a customer their ₹2,500 payment success on screen, with UPI QR stand and receipt printer on the counter.">
+          <div class="hero-img-badge">
+            <div class="badge-icon">₹</div>
+            <div>
+              <div class="badge-num">₹18K–₹46K<sup>*</sup></div>
+              <div class="badge-label">Monthly income range</div>
+            </div>
+          </div>
+          <div class="hero-img-tag">
+            <img src="assets/sbkuch-logo-white.png" alt="" height="16" style="filter:brightness(0) invert(1);">
+            <!--
+			<span>SBKuch counter · Live</span>
+            <span class="live-dot"></span>
+			-->
+          </div>
+        </div>
+        <div class="hero-service-pills" aria-label="Services offered">
+          <span>AEPS</span><span>UPI</span><span>Money Transfer</span><span>Bill Pay</span><span>PAN Card</span><span>Travel</span>
+        </div>
+        <p class="hero-disclaimer">*Based on active retailers (30-day avg). Actual earnings depend on transaction volume, services offered, and location. Figures are illustrative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS TICKER ============ -->
+  <div class="stats-bar">
+    <div class="wrap stats-row">
+      <div class="stat" data-count="10000" data-suffix="+">
+        <span class="stat-num"><span class="count-up">10,000</span><small>+</small></span>
+        <span class="stat-label">Saathis onboarded</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat" data-count="500" data-suffix="+">
+        <span class="stat-num"><span class="count-up">500</span><small>+</small></span>
+        <span class="stat-label">Districts covered</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">99.9<small>%</small></span>
+        <span class="stat-label">Transaction success rate</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">50<small>+</small></span>
+        <span class="stat-label">Bank partners</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-num">48<small>hr</small></span>
+        <span class="stat-label">Avg. onboarding time</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-visual" data-reveal>
+        <img src="assets/scenes/about-shop.jpg" alt="A SBKuch Saathi at his well-equipped counter — distributor managing a network of retailers across India.">
+        <div class="about-visual-overlay">
+          <div class="about-stat-card">
+            <span class="about-stat-num">500+</span>
+            <span class="about-stat-label">Districts covered</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy" data-reveal data-reveal-delay="100">
+        <p class="eyebrow">about sbkuch</p>
+        <h2>Connecting Bharat's retailers to every financial service.</h2>
+        <p class="section-lede">Empowering Saathis. Enabling transactions. Strengthening Bharat — one counter at a time.</p>
+
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🎯</div>
+            <div>
+              <h4>Our mission</h4>
+              <p>Empower every retailer to become a digital financial leader in their community.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🌏</div>
+            <div>
+              <h4>Our vision</h4>
+              <p>Build the most trusted, inclusive financial ecosystem for Bharat.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🤝</div>
+            <div>
+              <h4>Our values</h4>
+              <p>Trust, transparency, innovation, inclusion and integrity — in that order.</p>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-open-modal="partnerModal" data-role="retailer">Join 10,000+ SBKuch Saathis</button>
+      </div>
+    </div>
+
+    <!-- SBKuch Financial Core — full width -->
+    <div class="about-network-map" data-reveal>
+      <img src="assets/scenes/about-network.jpg" alt="SBKuch Financial Core — API Platform, Developer Stack, Merchant Acquiring, Transaction Banking, Wallet Engine, Switching, Reconciliation, Lending and Financial Inclusion all connected through one platform.">
+      <div class="about-network-caption">
+        <span class="about-network-tag">⚡ SBKuch Financial Core — one platform connecting 9 financial domains</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section-tint" id="services">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">the full counter</p>
+        <h2>Every reason a customer<br>walks through your door.</h2>
+        <p class="section-lede">Twelve services, one login. Tap a tile to see the earning rate.</p>
+        <p class="rate-disclaimer">Commission rates shown are indicative and subject to transaction type, amount, and applicable platform terms. <a href="#faq">Full details provided on onboarding →</a></p>
+      </div>
+
+      <div class="svc-grid">
+
+        <article class="svc-tile svc-tile-featured" data-reveal data-reveal-delay="0">
+          <span class="svc-tile-flag">Most popular</span>
+          <div class="svc-tile-icon svc-ic-red" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6a12 12 0 0 0-12 12v3M20 6a12 12 0 0 1 12 12v3M14 14.5a6 6 0 0 1 12 0v6.5a4 4 0 0 1-8 0M14 14.5V23M26 14.5v3M11 27c1.5 3 5 6 9 6s7.5-3 9-6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AEPS</h3>
+          <span class="svc-tile-rate">₹15 / txn</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="40">
+          <div class="svc-tile-icon svc-ic-blue" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="7" y="5" width="26" height="30" rx="4" stroke="currentColor" stroke-width="2.1"/><path d="M14 14h5l-5 6h6l-7 8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="26" r="1.8" fill="currentColor"/></svg>
+          </div>
+          <h3>UPI Payments</h3>
+          <span class="svc-tile-rate">₹2 / txn*</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="80">
+          <div class="svc-tile-icon svc-ic-orange" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M10 6h16l6 6v22a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M26 6v6h6" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M13 20h11M13 25h11M13 30h7" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Bill Payments</h3>
+          <span class="svc-tile-rate">₹5 / txn</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="120">
+          <div class="svc-tile-icon svc-ic-green" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="12" width="15" height="10" rx="2.5" stroke="currentColor" stroke-width="2.1"/><rect x="21" y="18" width="15" height="10" rx="2.5" stroke="currentColor" stroke-width="2.1"/><path d="M19 17l4-4M19 17l4 4" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Money Transfer</h3>
+          <span class="svc-tile-rate">₹8 / txn</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="160">
+          <div class="svc-tile-icon svc-ic-purple" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="5" y="10" width="30" height="20" rx="3" stroke="currentColor" stroke-width="2.1"/><circle cx="14" cy="20" r="3.4" stroke="currentColor" stroke-width="2.1"/><path d="M9 26c1-2.5 3-3.5 5-3.5s4 1 5 3.5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M23 16h8M23 21h8M23 26h5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+          </div>
+          <h3>PAN Card</h3>
+          <span class="svc-tile-rate">₹50 / card</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="200">
+          <span class="svc-tile-flag svc-tile-flag-light">Hotel · Flight · Bus</span>
+          <div class="svc-tile-icon svc-ic-teal" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 4c3 4 5 11 5 16 0 6-2.5 12-5 16-2.5-4-5-10-5-16 0-5 2-12 5-16z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M20 12l-9 5v4l9-2.5V12zM20 12l9 5v4l-9-2.5V12z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Travel Booking</h3>
+          <span class="svc-tile-rate">₹40 / booking</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="240">
+          <div class="svc-tile-icon svc-ic-indigo" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2.1"/><rect x="6" y="16" width="28" height="4" fill="currentColor" opacity=".15"/><path d="M12 25h6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><circle cx="27" cy="25" r="1.8" fill="currentColor"/></svg>
+          </div>
+          <h3>mATM</h3>
+          <span class="svc-tile-rate">₹12 / txn</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="280">
+          <div class="svc-tile-icon svc-ic-blue" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M6 30V16M14 30V10M22 30V19M30 30V13" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M5 34h30" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+          </div>
+          <h3>CMS</h3>
+          <span class="svc-tile-rate">Per txn</span>
+        </article>
+
+        <article class="svc-tile" data-reveal data-reveal-delay="320">
+          <span class="svc-tile-flag svc-tile-flag-light">Daily driver</span>
+          <div class="svc-tile-icon svc-ic-orange" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="12" y="4" width="16" height="32" rx="4" stroke="currentColor" stroke-width="2.1"/><path d="M17 10h6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M20 18v6l4 2" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Recharge</h3>
+          <span class="svc-tile-rate">Up to 3%</span>
+        </article>
+
+        <article class="svc-tile svc-tile-soon" data-reveal data-reveal-delay="360">
+          <div class="svc-tile-icon svc-ic-muted" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 5l13 5v9c0 8-5.5 14.5-13 17-7.5-2.5-13-9-13-17v-9l13-5z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Insurance</h3>
+          <span class="svc-tile-rate svc-tile-rate-soon">Coming soon</span>
+        </article>
+
+        <article class="svc-tile svc-tile-soon" data-reveal data-reveal-delay="400">
+          <div class="svc-tile-icon svc-ic-muted" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 24h5v8H8v-8zM17 16h6v16h-6V16zM26 10h6v22h-6V10z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Loans &amp; Credit</h3>
+          <span class="svc-tile-rate svc-tile-rate-soon">Coming soon</span>
+        </article>
+
+        <article class="svc-tile svc-tile-soon" data-reveal data-reveal-delay="440">
+          <div class="svc-tile-icon svc-ic-muted" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 5l14 8H6l14-8z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="M9 17v13M17 17v13M23 17v13M31 17v13" stroke="currentColor" stroke-width="2.1"/><path d="M6 34h28" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Govt Services</h3>
+          <span class="svc-tile-rate svc-tile-rate-soon">Coming soon</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">get started</p>
+        <h2>Four steps. Digital services<br>live in minutes.</h2>
+        <p class="section-lede">Sign up online now — UPI, bill payments and recharges go live immediately. Your mATM device ships to your shop within 48 hours.</p>
+      </div>
+
+      <div class="steps-visual">
+        <div class="steps-img-col" data-reveal>
+          <img src="assets/scenes/calculator-person.jpg" alt="A SBKuch Saathi checking his earnings dashboard on the SBKuch app at his kirana counter.">
+        </div>
+        <div class="steps-list-col">
+          <ol class="steps">
+            <li class="step" data-reveal data-reveal-delay="0">
+              <div class="step-badge">
+                <span class="step-num">01</span>
+              </div>
+              <div class="step-body">
+                <h3>Sign up</h3>
+                <p>Register with your mobile number. Takes under a minute — no office visit, no paperwork.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal data-reveal-delay="80">
+              <div class="step-badge">
+                <span class="step-num">02</span>
+              </div>
+              <div class="step-body">
+                <h3>Complete KYC</h3>
+                <p>Aadhaar, PAN and a selfie — all verified online, nothing to courier.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal data-reveal-delay="160">
+              <div class="step-badge">
+                <span class="step-num">03</span>
+              </div>
+              <div class="step-body">
+                <h3>Receive your devices</h3>
+                <p>We deliver your mATM and biometric scanner directly to your shop.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal data-reveal-delay="240">
+              <div class="step-badge step-badge-active">
+                <span class="step-num">04</span>
+              </div>
+              <div class="step-body">
+                <h3>Go live &amp; earn</h3>
+                <p>Digital services start earning from day one. Full mATM counter live within 48 hours of device delivery.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="flow-strip" data-reveal data-reveal-delay="320">
+            <p class="flow-label">A transaction completes in <span>&lt;10 seconds</span></p>
+            <div class="flow-row">
+              <span>Customer</span>
+              <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              <span>You key in</span>
+              <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              <span>SBKuch</span>
+              <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              <span>Bank</span>
+              <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6h16M12 1l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              <span class="flow-final">✓ Settled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APP SECTION ============ -->
+  <section class="section section-tint" id="app">
+    <div class="wrap app-grid">
+      <div class="app-copy" data-reveal>
+        <p class="eyebrow">the saathi app</p>
+        <h2>Every transaction.<br>Right in your pocket.</h2>
+        <p class="section-lede">The SBKuch Saathi app puts your entire counter in your phone — check your balance, process transactions, track daily earnings, and get settlement alerts in real time.</p>
+
+        <div class="app-features">
+          <div class="app-feature">
+            <div class="app-feature-icon">📊</div>
+            <div>
+              <h4>Live earnings dashboard</h4>
+              <p>See today's sales, transaction count, and daily income — updated after every transaction.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-icon">⚡</div>
+            <div>
+              <h4>Instant settlement alerts</h4>
+              <p>Get notified the moment money hits your bank account. No waiting, no guessing.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-icon">🔒</div>
+            <div>
+              <h4>Verified Merchant status</h4>
+              <p>Your app shows your RBI-authorised Verified Merchant badge — your customers see it too.</p>
+            </div>
+          </div>
+          <div class="app-feature">
+            <div class="app-feature-icon">📱</div>
+            <div>
+              <h4>Works on any Android</h4>
+              <p>Runs smoothly on ₹6,000 phones. No internet? Core features work offline too.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-download-btns">
+          <a href="#" class="btn btn-primary app-download-btn" aria-label="Download SBKuch Saathi app on Google Play">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.72c.27.15.57.22.88.2l.1-.02L13.93 12 4.16.1 4.06.08A1.5 1.5 0 002.5 1.5v21c0 .53.27 1 .68 1.22zM17.11 8.34l-2.23-2.23-9.57-5.5 8.33 9.34 3.47-1.61zM5.31 23.4l9.57-5.5 2.23-2.23-3.47-1.61L5.31 23.4zM20.5 10.5l-2.08-1.2-3.79 1.76L18.42 13.7l2.08-1.2a1.5 1.5 0 000-2z"/></svg>
+            <div>
+              <div class="btn-store-sub">GET IT ON</div>
+              <div class="btn-store-name">Google Play</div>
+            </div>
+          </a>
+          <a href="#" class="btn btn-outline-navy app-download-btn" aria-label="Download SBKuch Saathi app on App Store">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.15-2.18 1.27-2.15 3.8.03 3.02 2.65 4.03 2.68 4.05l-.08.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <div class="btn-store-sub">DOWNLOAD ON THE</div>
+              <div class="btn-store-name">App Store</div>
+            </div>
+          </a>
+        </div>
+        <p class="app-download-note">Free download · Works on Android 6+ · No device replacement needed</p>
+      </div>
+
+      <div class="app-visual" data-reveal data-reveal-delay="120">
+        <div class="app-phone-wrap">
+          <img src="assets/scenes/app-phone.jpg" alt="The SBKuch app at the centre of every service — AEPS, UPI, bill payments, travel, PAN, money transfer and support — all connected in one place.">
+          <div class="app-badge app-badge-top">
+            <span class="app-badge-icon">⭐</span>
+            <div>
+              <div class="app-badge-num">4.6</div>
+              <div class="app-badge-label">App Store rating</div>
+            </div>
+          </div>
+          <div class="app-badge app-badge-bottom">
+            <span class="app-badge-icon">📥</span>
+            <div>
+              <div class="app-badge-num">50K+</div>
+              <div class="app-badge-label">Downloads</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EARNINGS CALCULATOR ============ -->
+  <section class="section section-dark" id="earnings">
+    <div class="wrap">
+      <div class="section-head section-head-light" data-reveal>
+        <p class="eyebrow eyebrow-gold">income calculator</p>
+        <h2 style="color:#fff;">See how much you<br>could earn each month.</h2>
+        <p class="section-lede" style="color:rgba(255,255,255,.65);">Slide to set your daily transactions and watch your income grow.</p>
+      </div>
+
+      <!-- Tab controls -->
+      <div class="calc-tabs" role="tablist" aria-label="Partner type">
+        <button class="calc-tab is-active" role="tab" aria-selected="true" tabindex="0" data-tab="retailer">
+          <span class="tab-icon">🏪</span> Retailer
+        </button>
+        <button class="calc-tab" role="tab" aria-selected="false" tabindex="-1" data-tab="distributor">
+          <span class="tab-icon">📦</span> Distributor
+        </button>
+        <button class="calc-tab" role="tab" aria-selected="false" tabindex="-1" data-tab="master">
+          <span class="tab-icon">🌐</span> Master Distributor
+        </button>
+      </div>
+
+      <!-- Panel: Retailer -->
+      <div class="calc" id="panel-retailer" role="tabpanel">
+        <div class="calc-inputs">
+          <p class="calc-model-note">You earn a fixed commission on each transaction you process at your counter.</p>
+
+          <div class="calc-row" data-rate="15">
+            <div class="calc-row-head">
+              <label for="r-aeps">
+                <span class="calc-svc-icon">👆</span> AEPS Withdrawals
+              </label>
+              <span class="calc-rate-chip">₹15 / txn</span>
+            </div>
+            <input type="range" id="r-aeps" min="0" max="100" value="20">
+            <div class="calc-range-labels"><span>0</span><output>20</output> / day<span>100</span></div>
+          </div>
+
+          <div class="calc-row" data-rate="12">
+            <div class="calc-row-head">
+              <label for="r-matm">
+                <span class="calc-svc-icon">💳</span> mATM Withdrawals
+              </label>
+              <span class="calc-rate-chip">₹12 / txn</span>
+            </div>
+            <input type="range" id="r-matm" min="0" max="100" value="10">
+            <div class="calc-range-labels"><span>0</span><output>10</output> / day<span>100</span></div>
+          </div>
+
+          <div class="calc-row" data-rate="5">
+            <div class="calc-row-head">
+              <label for="r-bills">
+                <span class="calc-svc-icon">💡</span> Bill Payments
+              </label>
+              <span class="calc-rate-chip">₹5 / txn</span>
+            </div>
+            <input type="range" id="r-bills" min="0" max="200" value="25">
+            <div class="calc-range-labels"><span>0</span><output>25</output> / day<span>200</span></div>
+          </div>
+
+          <div class="calc-row" data-rate="8">
+            <div class="calc-row-head">
+              <label for="r-transfer">
+                <span class="calc-svc-icon">↗</span> Money Transfers
+              </label>
+              <span class="calc-rate-chip">₹8 / txn</span>
+            </div>
+            <input type="range" id="r-transfer" min="0" max="50" value="15">
+            <div class="calc-range-labels"><span>0</span><output>15</output> / day<span>50</span></div>
+          </div>
+
+          <div class="calc-row" data-rate="50">
+            <div class="calc-row-head">
+              <label for="r-pan">
+                <span class="calc-svc-icon">🪪</span> PAN Card Services
+              </label>
+              <span class="calc-rate-chip">₹50 / card</span>
+            </div>
+            <input type="range" id="r-pan" min="0" max="20" value="5">
+            <div class="calc-range-labels"><span>0</span><output>5</output> / day<span>20</span></div>
+          </div>
+
+          <div class="calc-row" data-rate="40">
+            <div class="calc-row-head">
+              <label for="r-travel">
+                <span class="calc-svc-icon">✈</span> Travel Bookings
+              </label>
+              <span class="calc-rate-chip">₹40 / booking</span>
+            </div>
+            <input type="range" id="r-travel" min="0" max="20" value="3">
+            <div class="calc-range-labels"><span>0</span><output>3</output> / day<span>20</span></div>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <div class="calc-result-label">Your estimated income</div>
+          <div class="calc-result-big">
+            <div class="calc-result-period">Monthly</div>
+            <div class="calc-result-amount" id="calcMonthly">₹31,050</div>
+          </div>
+          <div class="calc-result-rows">
+            <div class="calc-result-row">
+              <span>Daily earnings</span>
+              <span id="calcDaily">₹1,035</span>
+            </div>
+            <div class="calc-result-row">
+              <span>Annual income</span>
+              <span id="calcAnnual">₹3,77,775</span>
+            </div>
+          </div>
+          <div class="calc-result-note">Retailers near you earn ₹18,000–₹46,000/mo on average. Figures are illustrative and depend on your transaction volume.</div>
+          <button type="button" class="btn btn-gold" data-open-modal="partnerModal" data-role="retailer">Start earning this →</button>
+        </div>
+      </div>
+
+      <!-- Panel: Distributor -->
+      <div class="calc" id="panel-distributor" role="tabpanel" hidden>
+        <div class="calc-inputs">
+          <p class="calc-model-note">As a distributor you earn an override commission on every transaction your retailers make.</p>
+          <div class="calc-row">
+            <div class="calc-row-head">
+              <label for="distRetailers">Active retailers in your network</label>
+            </div>
+            <input type="range" id="distRetailers" min="1" max="100" value="20">
+            <div class="calc-range-labels"><span>1</span><output>20</output> retailers<span>100</span></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-row-head">
+              <label for="distOverride">Override per retailer / month</label>
+              <span class="calc-rate-chip" id="distOverrideLabel">₹3,000</span>
+            </div>
+            <input type="range" id="distOverride" min="500" max="8000" step="100" value="3000">
+            <div class="calc-range-labels"><span>₹500</span><span></span><span>₹8,000</span></div>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="calc-result-label">Your network income</div>
+          <div class="calc-result-big">
+            <div class="calc-result-period">Monthly</div>
+            <div class="calc-result-amount" id="distMonthly">₹60,000</div>
+          </div>
+          <div class="calc-result-rows">
+            <div class="calc-result-row">
+              <span>Annual income</span>
+              <span id="distAnnual">₹7,20,000</span>
+            </div>
+          </div>
+          <div class="calc-result-note">Joining fee: ₹2,999 only. No cap on your network size.</div>
+          <button type="button" class="btn btn-gold" data-open-modal="partnerModal" data-role="distributor">Become a distributor →</button>
+        </div>
+      </div>
+
+      <!-- Panel: Master Distributor -->
+      <div class="calc" id="panel-master" role="tabpanel" hidden>
+        <div class="calc-inputs">
+          <p class="calc-model-note">As a master distributor, you earn regional overrides across all distributors in your zone.</p>
+          <div class="calc-row">
+            <div class="calc-row-head">
+              <label for="masterDistributors">Active distributors in your network</label>
+            </div>
+            <input type="range" id="masterDistributors" min="1" max="50" value="10">
+            <div class="calc-range-labels"><span>1</span><output>10</output> distributors<span>50</span></div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-row-head">
+              <label for="masterOverride">Override per distributor / month</label>
+              <span class="calc-rate-chip" id="masterOverrideLabel">₹8,000</span>
+            </div>
+            <input type="range" id="masterOverride" min="2000" max="25000" step="500" value="8000">
+            <div class="calc-range-labels"><span>₹2,000</span><span></span><span>₹25,000</span></div>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="calc-result-label">Your regional income</div>
+          <div class="calc-result-big">
+            <div class="calc-result-period">Monthly</div>
+            <div class="calc-result-amount" id="masterMonthly">₹80,000</div>
+          </div>
+          <div class="calc-result-rows">
+            <div class="calc-result-row">
+              <span>Annual income</span>
+              <span id="masterAnnual">₹9,60,000</span>
+            </div>
+          </div>
+          <div class="calc-result-note">Joining fee: ₹9,999 only. Regional territory assigned.</div>
+          <button type="button" class="btn btn-gold" data-open-modal="partnerModal" data-role="master">Apply as master distributor →</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ GROWTH PATH ============ -->
+  <section class="section" id="growth">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">beyond the counter</p>
+        <h2>From shopkeeper to network leader.</h2>
+        <p class="section-lede">Har kadam, tarakki — every step here is a real, verifiable step up.</p>
+      </div>
+
+      <div class="growth-path">
+
+        <div class="growth-connector" aria-hidden="true">
+          <div class="growth-arrow"></div>
+          <div class="growth-arrow"></div>
+        </div>
+
+        <article class="growth-card" data-reveal data-reveal-delay="0">
+          <div class="growth-card-img">
+            <img src="assets/growth/growth-retailer.jpg" alt="A SBKuch retailer at his counter.">
+            <span class="growth-step-pill">Step 1</span>
+          </div>
+          <div class="growth-body">
+            <div class="growth-tier-badge growth-tier-bronze">Retailer</div>
+            <p class="growth-tag">Run your counter. Earn on every transaction you process.</p>
+            <div class="growth-income-scale" aria-hidden="true"><span class="growth-income-fill" style="width:18%"></span></div>
+            <div class="growth-facts">
+              <div class="growth-fact">
+                <span class="fact-label">Joining fee</span>
+                <span class="fact-value fact-highlight">₹0 — completely free</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Earnings from</span>
+                <span class="fact-value">Your own transactions</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Monthly income</span>
+                <span class="fact-value fact-green">₹15k – ₹50k</span>
+              </div>
+            </div>
+            <div class="growth-kit-note">No upfront cost. Device kit provided as part of onboarding. Start earning from day one.</div>
+            <button type="button" class="btn btn-outline-navy btn-small" data-open-modal="partnerModal" data-role="retailer">Start as retailer — it's free</button>
+          </div>
+        </article>
+
+        <article class="growth-card growth-card-featured" data-reveal data-reveal-delay="100">
+          <div class="growth-card-img">
+            <img src="assets/growth/growth-distributor.jpg" alt="A SBKuch distributor managing a network of retailers.">
+            <span class="growth-step-pill">Step 2</span>
+          </div>
+          <div class="growth-body">
+            <div class="growth-tier-badge growth-tier-silver">Distributor</div>
+            <p class="growth-tag">Onboard retailers. Support them. Earn from their success.</p>
+            <div class="growth-facts">
+              <div class="growth-fact">
+                <span class="fact-label">Joining fee</span>
+                <span class="fact-value">₹2,999 one-time</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Earnings from</span>
+                <span class="fact-value">Your retailer network</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Monthly income</span>
+                <span class="fact-value fact-green">₹75k – ₹2L</span>
+              </div>
+            </div>
+            <div class="growth-kit-note">
+              <strong>What's included:</strong> Distributor kit, training materials, territory assignment &amp; 30-day onboarding support.
+              <span class="growth-refund">Full refund if not satisfied within 30 days.</span>
+            </div>
+            <button type="button" class="btn btn-primary btn-small" data-open-modal="partnerModal" data-role="distributor">Become a distributor</button>
+          </div>
+        </article>
+
+        <article class="growth-card" data-reveal data-reveal-delay="200">
+          <div class="growth-card-img">
+            <img src="assets/growth/growth-master.jpg" alt="A master distributor overseeing a regional network across India.">
+            <span class="growth-step-pill">Step 3</span>
+          </div>
+          <div class="growth-body">
+            <div class="growth-tier-badge growth-tier-gold">Master Distributor</div>
+            <p class="growth-tag">Lead a region. Build distributors. Own a territory.</p>
+            <div class="growth-facts">
+              <div class="growth-fact">
+                <span class="fact-label">Joining fee</span>
+                <span class="fact-value">₹9,999 one-time</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Earnings from</span>
+                <span class="fact-value">Regional distributor network</span>
+              </div>
+              <div class="growth-fact">
+                <span class="fact-label">Monthly income</span>
+                <span class="fact-value fact-green">₹3L+</span>
+              </div>
+            </div>
+            <div class="growth-kit-note">
+              <strong>What's included:</strong> Master Distributor kit, exclusive regional territory, dedicated relationship manager &amp; marketing materials.
+              <span class="growth-refund">Full refund if not satisfied within 30 days.</span>
+            </div>
+            <button type="button" class="btn btn-outline-navy btn-small" data-open-modal="partnerModal" data-role="master">Apply as master</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST ============ -->
+  <section class="section section-tint" id="trust">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">built on trust</p>
+        <h2>Compliant by design,<br>not by patch.</h2>
+        <p class="section-lede">Your customers' money and data move through regulated rails, every single time.</p>
+      </div>
+
+      <div class="trust-layout">
+        <div class="trust-visual" data-reveal>
+          <img src="assets/scenes/trust-shield.jpg" alt="The SBKuch app showing Verified Merchant status, secure balance, and RBI-compliant transaction security badges.">
+          <div class="trust-visual-badge">
+            <span class="trust-badge-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="10" y="18" width="20" height="15" rx="3" stroke="currentColor" stroke-width="2.4"/><path d="M14 18v-4a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="2.4"/><circle cx="20" cy="25" r="2.2" fill="currentColor"/></svg></span>
+            <div>
+              <div class="trust-badge-title">100% Secure</div>
+              <div class="trust-badge-sub">256-bit encrypted</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-right" data-reveal data-reveal-delay="100">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-gold" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5l14 8H6l14-8z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="M9 17v13M17 17v13M23 17v13M31 17v13" stroke="currentColor" stroke-width="2.3"/><path d="M6 34h28" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></div>
+              <h4>RBI-authorised BC</h4>
+              <p>Operates as a Business Correspondent (BC) under RBI guidelines for payment intermediaries and agent banking services.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-blue" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M13 12h14a7 7 0 0 1 7 7v2" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M30 17l4 4-4 4" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 28H13a7 7 0 0 1-7-7v-2" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M10 23l-4-4 4-4" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4>NPCI empanelled</h4>
+              <p>Certified on UPI and AEPS rails directly through the National Payments Corporation of India.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-orange" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="5" y="10" width="30" height="20" rx="3" stroke="currentColor" stroke-width="2.3"/><circle cx="14" cy="20" r="3.2" stroke="currentColor" stroke-width="2.3"/><path d="M9 26c1-2.3 2.8-3.3 5-3.3s4 1 5 3.3" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M23 16h8M23 21h8M23 26h5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></div>
+              <h4>UIDAI compliant</h4>
+              <p>Aadhaar-based authentication services follow UIDAI data and biometric consent standards.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-teal" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5l13 5v9c0 8-5.5 14.5-13 17-7.5-2.5-13-9-13-17v-9l13-5z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4>ISO 27001 certified</h4>
+              <p>Information security management certified to the international ISO/IEC 27001 standard by an accredited body.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-green" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="10" y="18" width="20" height="15" rx="3" stroke="currentColor" stroke-width="2.3"/><path d="M14 18v-4a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="2.3"/><circle cx="20" cy="25" r="2.2" fill="currentColor"/></svg></div>
+              <h4>256-bit encryption</h4>
+              <p>Bank-grade TLS 1.3 encryption on every transaction, every session, every device.</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-item-icon trust-icon-red" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4c3 4 5 11 5 16 0 6-2.5 12-5 16-2.5-4-5-10-5-16 0-5 2-12 5-16z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><ellipse cx="20" cy="20" rx="14" ry="7" stroke="currentColor" stroke-width="2.3"/></svg></div>
+              <h4>Data stays in India</h4>
+              <p>All data hosted on Indian infrastructure only. Customer records never leave Indian jurisdiction.</p>
+            </div>
+          </div>
+
+          <div class="bank-strip" data-reveal>
+            <p>Settlement through India's leading banks</p>
+            <div class="bank-chips">
+              <span>SBI</span>
+              <span>HDFC Bank</span>
+              <span>ICICI Bank</span>
+              <span>Axis Bank</span>
+              <span>Kotak Mahindra</span>
+              <span>Punjab National Bank</span>
+              <span>Bank of Baroda</span>
+              <span>Union Bank</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-stats-row" data-reveal>
+        <div class="trust-stat">
+          <div class="ts-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M22 4L9 22h9l-2 14 15-20h-9l0-12z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" fill="none"/></svg></div>
+          <div>
+            <div class="ts-head">Fast settlements</div>
+            <div class="ts-sub">Real-time or T+1</div>
+          </div>
+        </div>
+        <div class="trust-stat">
+          <div class="ts-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2.3"/><path d="M11 11l18 18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg></div>
+          <div>
+            <div class="ts-head">Zero hidden charges</div>
+            <div class="ts-sub">Complete transparency</div>
+          </div>
+        </div>
+        <div class="trust-stat">
+          <div class="ts-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 22v-2a12 12 0 0 1 24 0v2" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><rect x="5" y="22" width="7" height="9" rx="2" stroke="currentColor" stroke-width="2.3"/><rect x="28" y="22" width="7" height="9" rx="2" stroke="currentColor" stroke-width="2.3"/></svg></div>
+          <div>
+            <div class="ts-head">Dedicated support</div>
+            <div class="ts-sub">Mon–Sun, 9am–7pm IST</div>
+          </div>
+        </div>
+        <div class="trust-stat">
+          <div class="ts-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5l13 5v9c0 8-5.5 14.5-13 17-7.5-2.5-13-9-13-17v-9l13-5z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/></svg></div>
+          <div>
+            <div class="ts-head">Grievance redressal</div>
+            <div class="ts-sub">RBI Ombudsman path</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORIES ============ -->
+  <section class="section" id="stories">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">real counters · real income</p>
+        <h2>Shopkeepers building<br>more than just sales.</h2>
+      </div>
+
+      <div class="story-grid">
+
+        <article class="story-card" data-reveal data-reveal-delay="0">
+          <div class="story-img-wrap">
+            <img src="assets/stories/story-1.jpg" alt="Priya at her kirana store in Jaipur — SBKuch Saathi with QR stand and POS terminal." class="story-photo">
+            <div class="story-income-badge">
+              <span class="income-before">₹7K</span>
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" aria-hidden="true"><path d="M1 6h18M14 1l5 5-5 5" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="income-after">₹29K</span>
+              <span class="income-label">/mo</span>
+            </div>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">"My customers used to go 2 km away for cash. Now they come to me. AEPS and UPI both at my counter — they don't need to go anywhere else."</p>
+            <div class="story-meta">
+              <strong>Priya M.</strong>
+              <span>Kirana store · Jaipur, Rajasthan</span>
+            </div>
+            <span class="story-verified">✓ Verified SBKuch Saathi · 11 months active</span>
+          </div>
+        </article>
+
+        <article class="story-card" data-reveal data-reveal-delay="80">
+          <div class="story-img-wrap">
+            <img src="assets/stories/story-2.jpg" alt="Suresh managing his distribution network at his warehouse — SBKuch Distributor Saathi." class="story-photo">
+            <div class="story-income-badge">
+              <span class="income-before">₹6.5K</span>
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" aria-hidden="true"><path d="M1 6h18M14 1l5 5-5 5" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="income-after">₹27K</span>
+              <span class="income-label">/mo</span>
+            </div>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">"Started with recharges only. Added bill payments and transfers, and my regulars visit twice as often now."</p>
+            <div class="story-meta">
+              <strong>Sunita D.</strong>
+              <span>Mobile shop · Indore, Madhya Pradesh</span>
+            </div>
+            <span class="story-verified">✓ Verified SBKuch Saathi · 9 months active</span>
+          </div>
+        </article>
+
+        <article class="story-card" data-reveal data-reveal-delay="160">
+          <div class="story-img-wrap">
+            <img src="assets/stories/story-3.jpg" alt="Imran's general store in Lucknow now processing daily settlements through SBKuch." class="story-photo">
+            <div class="story-income-badge">
+              <span class="income-before">₹10.5K</span>
+              <svg width="20" height="12" viewBox="0 0 20 12" fill="none" aria-hidden="true"><path d="M1 6h18M14 1l5 5-5 5" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="income-after">₹41K</span>
+              <span class="income-label">/mo</span>
+            </div>
+          </div>
+          <div class="story-body">
+            <p class="story-quote">"Daily settlements mean I never wait on my own money. That alone changed how I run the shop."</p>
+            <div class="story-meta">
+              <strong>Imran K.</strong>
+              <span>General store · Lucknow, Uttar Pradesh</span>
+            </div>
+            <span class="story-verified">✓ Verified SBKuch Saathi · 18 months active</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="story-disclaimer">Income figures reflect individual partner results over their active period on the platform. Actual earnings vary by city, services offered, and daily transaction volume. Partner names abbreviated for privacy. These are real, verified partners.</p>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP ============ -->
+  <section class="section section-tint" id="leadership">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">who's behind it</p>
+        <h2>The people running the network.</h2>
+        <p class="section-lede">A focused leadership team accountable for every rupee that moves through SBKuch.</p>
+      </div>
+
+      <div class="leader-grid">
+
+        <article class="leader-card" data-reveal data-reveal-delay="0">
+          <div class="leader-avatar-wrap">
+            <span class="leader-avatar leader-avatar-navy">AR</span>
+            <span class="leader-role-dot"></span>
+          </div>
+          <div class="leader-info">
+            <h3>Ananya Rao</h3>
+            <p class="leader-title">Co-Founder &amp; CEO</p>
+            <p class="leader-bio">Ten years building agent-banking networks before starting SBKuch. Sets the partner-first roadmap and strategy.</p>
+          </div>
+        </article>
+
+        <article class="leader-card" data-reveal data-reveal-delay="80">
+          <div class="leader-avatar-wrap">
+            <span class="leader-avatar leader-avatar-red">KS</span>
+            <span class="leader-role-dot"></span>
+          </div>
+          <div class="leader-info">
+            <h3>Karthik Subramaniam</h3>
+            <p class="leader-title">Co-Founder &amp; CTO</p>
+            <p class="leader-bio">Built the payments stack behind two NPCI-empanelled platforms. Owns platform uptime and security.</p>
+          </div>
+        </article>
+
+        <article class="leader-card" data-reveal data-reveal-delay="160">
+          <div class="leader-avatar-wrap">
+            <span class="leader-avatar leader-avatar-gold">MI</span>
+            <span class="leader-role-dot"></span>
+          </div>
+          <div class="leader-info">
+            <h3>Meera Iyer</h3>
+            <p class="leader-title">Chief Financial Officer</p>
+            <p class="leader-bio">Former banking-sector finance lead. Keeps daily settlements honest, on time, every time.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="faq-header" data-reveal>
+        <div>
+          <p class="eyebrow">before you ask</p>
+          <h2>Questions partners ask us first.</h2>
+        </div>
+        <button type="button" class="btn btn-primary" data-open-modal="partnerModal">Still have questions?</button>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-list" data-reveal data-reveal-delay="50">
+          <details class="faq-item" open>
+            <summary><span class="faq-q-num">01</span> How much does it cost to become a retailer?</summary>
+            <p>Nothing to join. Zero joining fee at the retailer level — you only need the mATM and biometric device, which we deliver to your shop as part of onboarding.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q-num">02</span> How fast can I actually go live?</summary>
+            <p>Digital services (UPI, bill payments, recharge) go live the same day you complete KYC — no wait. Your mATM device and biometric scanner are delivered to your shop within 48 hours, after which your full counter is operational.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q-num">03</span> Is there a contract or lock-in period?</summary>
+            <p>No lock-in. You can stop offering any service at any time. We'd rather earn your business every month than trap you in a contract.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q-num">04</span> What happens if a transaction fails?</summary>
+            <p>Failed transactions are auto-reversed to the customer's account, typically within minutes and almost always same-day. Our 24×7 support team tracks every failure until it's resolved.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q-num">05</span> When do I actually get paid?</summary>
+            <p>Settlements run daily, straight to your bank account. You're never waiting weeks — or holding your own float — for money you've already earned.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q-num">06</span> Is my customers' data safe with SBKuch?</summary>
+            <p>Yes — we're RBI and NPCI compliant, ISO 27001 certified, and all data is stored on Indian infrastructure with 256-bit encryption.</p>
+          </details>
+        </div>
+
+        <div class="faq-cta-panel" data-reveal data-reveal-delay="150">
+          <div class="faq-cta-inner">
+            <div class="faq-cta-icon">💬</div>
+            <h3>Talk to our team directly</h3>
+            <p>Have a specific question about your city, your shop type, or your setup? Our onboarding team answers everything before you commit.</p>
+            <button type="button" class="btn btn-primary btn-full" data-open-modal="partnerModal">Request a free callback</button>
+            <a href="tel:18001234567" class="faq-phone-link">📞 1800 123 4567 · Free call</a>
+            <p class="faq-hours">Mon–Sun, 9am–7pm IST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band" id="contact">
+    <div class="cta-band-bg" aria-hidden="true">
+      <div class="cta-mesh-1"></div>
+      <div class="cta-mesh-2"></div>
+    </div>
+    <div class="wrap cta-inner" data-reveal>
+      <div class="cta-copy">
+        <p class="eyebrow eyebrow-gold">ready to start?</p>
+        <h2>Apni dukaan. Poora bank.<br><span class="cta-h2-sub">Your shop. Full bank.</span></h2>
+        <p>Talk to us today. Get your device kit this week. Start earning from day one.</p>
+        <div class="cta-trust-row">
+          <span>✓ Free for retailers</span>
+          <span>✓ Digital services live in minutes</span>
+          <span>✓ Daily settlements</span>
+        </div>
+      </div>
+      <div class="cta-action-panel">
+        <button type="button" class="btn btn-gold btn-large" data-open-modal="partnerModal" data-role="retailer">Become a SBKuch Saathi — it's free →</button>
+        <div class="cta-or">or contact us directly</div>
+        <a href="https://wa.me/918001234567?text=Hi%2C%20I%20want%20to%20become%20an%20SBKuch%20partner"
+           class="btn btn-whatsapp btn-large" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.549 4.1 1.508 5.833L.057 23.943l6.284-1.648A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.002-1.368l-.36-.213-3.733.979 1-3.642-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          WhatsApp us
+        </a>
+        <a href="tel:18001234567" class="cta-phone">📞 1800 123 4567</a>
+        <p class="cta-note">Mon–Sun, 9am–7pm · Callback within 2 hours</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ BECOME A PARTNER MODAL ============ -->
+<dialog id="partnerModal" class="modal" aria-labelledby="partnerModalTitle">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <img src="assets/sbkuch-logo.png" alt="SBKuch" height="30" class="modal-logo">
+      <h2 id="partnerModalTitle">Let's get your counter live.</h2>
+      <p>We call you back — free, within 2 hours.</p>
+      <button type="button" class="modal-close" data-close-modal aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <form class="modal-form" id="leadForm" method="dialog" novalidate>
+
+      <!-- Step 1: Phone only -->
+      <div class="modal-step" id="modalStep1">
+        <label class="form-label" for="leadPhone">Your mobile number</label>
+        <input type="tel" id="leadPhone" placeholder="10-digit mobile number"
+               pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric" autocomplete="tel" required>
+        <p class="modal-step-hint" id="phoneError" role="alert" aria-live="polite"></p>
+        <button type="button" class="btn btn-primary btn-full" id="modalNextBtn">
+          Get my free callback →
+        </button>
+        <div class="modal-callback-promise">
+          <span class="callback-icon">⏱</span>
+          <span>We call back within <strong>2 hours</strong> · Mon–Sun, 9am–7pm</span>
+        </div>
+        <div class="modal-divider"><span>or reach us directly</span></div>
+        <a href="https://wa.me/918001234567?text=Hi%2C%20I%20want%20to%20become%20an%20SBKuch%20partner"
+           class="btn btn-whatsapp btn-full" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.549 4.1 1.508 5.833L.057 23.943l6.284-1.648A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.002-1.368l-.36-.213-3.733.979 1-3.642-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Step 2: Details (shown after phone validated) -->
+      <div class="modal-step" id="modalStep2" hidden>
+        <div class="modal-step2-phone-confirmed">
+          <span class="step2-check">✓</span>
+          <span id="step2PhoneDisplay"></span>
+          <button type="button" class="step2-edit" id="modalBackBtn">Edit</button>
+        </div>
+        <label class="form-label" for="leadName">Your name <span class="form-optional">(optional)</span></label>
+        <input type="text" id="leadName" placeholder="What should we call you?" autocomplete="name">
+
+        <label class="form-label" for="leadRole">I want to join as</label>
+        <select id="leadRole">
+          <option value="retailer">Retailer — free to join</option>
+          <option value="distributor">Distributor — ₹2,999</option>
+          <option value="master">Master Distributor — ₹9,999</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          Confirm — call me today
+        </button>
+        <p class="modal-note" id="leadNote" role="status" aria-live="polite"></p>
+      </div>
+
+      <p class="modal-fineprint">Free for retailers · RBI &amp; NPCI compliant · No spam, ever</p>
+    </form>
+  </div>
+</dialog>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <img src="assets/sbkuch-logo-white.png" alt="SBKuch" height="34" class="footer-logo">
+        </a>
+        <p class="footer-tagline">Har kadam, tarakki.<br><em>Every step, progress.</em></p>
+        <div class="footer-contact">
+          <a href="mailto:care@sbkuch.in">care@sbkuch.in</a>
+          <a href="tel:18001234567">1800 123 4567</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#services">AEPS withdrawal</a>
+        <a href="#services">UPI payments</a>
+        <a href="#services">Bill payments</a>
+        <a href="#services">Money transfer</a>
+        <a href="#services">Mobile &amp; DTH recharge</a>
+        <a href="#services">PAN card</a>
+        <a href="#services">Travel booking</a>
+        <a href="#services">mATM withdrawal</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Partner with us</h5>
+        <a href="#growth">Become a retailer</a>
+        <a href="#growth">Become a distributor</a>
+        <a href="#growth">Master distributor</a>
+        <a href="#earnings">Income calculator</a>
+        <a href="#stories">Partner stories</a>
+        <a href="#leadership">Meet the team</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Support &amp; compliance</h5>
+        <a href="#trust">Security &amp; compliance</a>
+        <a href="#faq">FAQ</a>
+        <a href="#how-it-works">How it works</a>
+        <p class="footer-grievance">Grievance redressal officer available for unresolved concerns. Escalate to: <a href="https://cms.rbi.org.in" target="_blank" rel="noopener">RBI Ombudsman →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="wrap footer-bottom-inner">
+      <p>© <span id="year"></span> SBKuch. All rights reserved.</p>
+      <p>RBI &amp; NPCI guidelines followed · ISO 27001 certified · Data stored in India</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+/* Scroll-reveal animation */
+(function(){
+  if(!window.IntersectionObserver) return;
+  var els = document.querySelectorAll('[data-reveal]');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var delay = e.target.getAttribute('data-reveal-delay') || 0;
+        setTimeout(function(){ e.target.classList.add('revealed'); }, parseInt(delay));
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+/* Nav scroll behavior */
+(function(){
+  var header = document.getElementById('site-header');
+  window.addEventListener('scroll', function(){
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
